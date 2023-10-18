@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>World population</span>
+  </mat-toolbar-row>
+</mat-toolbar><br>
+
+<mat-form-field appearance="outline">
+  <mat-label>Select Year</mat-label>
+  <mat-select [(value)]="selectedYear" (selectionChange)="handleChange($event)">
+    <mat-option *ngFor="let year of years" [value]="year">Year:{{year}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="consolidated-info">
+  <div class="column">
+    <p class="header">World population ({{selectedYear}})</p>
+    <p class="current-population">{{currentPopulationInWords}}</p>
+  </div>
+  <div class="column area-chart">
+    <app-overall-chart [data]="groupedPopulation"></app-overall-chart>
+  </div>
+</div>
+<div class="population-details">
+  <app-population-vs-density [currentYearInfo]="currentYearInfo"></app-population-vs-density>
+</div>

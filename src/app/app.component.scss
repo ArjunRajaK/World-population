@@ -1,0 +1,52 @@
+$height: 200px;
+$padding: 10px;
+
+.current-population {
+    font-size: 30px;
+    font-weight: bold;
+    color: #A49393;
+}
+
+.header {
+    color: #A49393;
+    font-weight: bold;
+}
+
+.consolidated-info {
+    width: 30%;
+    padding: 1%;
+    height: $height;
+    display: flex;
+
+    .column {
+        flex: 1;
+        border: solid 1px rgb(240, 231, 231);
+        border-radius: 2px;
+        padding: $padding;
+    }
+
+    p:first-child {
+        padding-bottom: 8vh;
+    }
+}
+
+.population-details {
+    padding: $padding;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .area-chart {
+        display: none;
+    }
+
+    .consolidated-info {
+        margin-left: 15vw;
+        width: 60vw;
+        height: 18vh;
+    }
+
+    mat-form-field {
+     width: 93%;
+    }
+}
