@@ -1,5 +1,13 @@
 # WorldPopulation
 
+## Desktop view
+![image](https://github.com/ArjunRajaK/Word-poulation/assets/33679462/80933ee4-af41-4659-b5b6-81fa41613479)
+
+## Mobile view
+
+![image](https://github.com/ArjunRajaK/Word-poulation/assets/33679462/a813d05c-4fdd-42a5-b1e3-30042152cf34)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
 ## Development server
@@ -20,8 +28,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usability and code info
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ - For interactivity i added zoom funcanality.
+ - I used closure for chart rendering and reusability.
+ - I coudn't able to add continent color since it's much bigger CSV.
